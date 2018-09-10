@@ -74,16 +74,12 @@ function fDiv(a,b){return a/b;}
 function mathOperation(arg1, arg2, operation) {
 	switch (operation) {
 		case 'add':
-			fAdd(arg1, arg2);
-			break;
+			return fAdd(arg1, arg2);
 		case 'sub':
-			fSub(arg1, arg2);
-			break;
+			return fSub(arg1, arg2);
 		case 'mul':
-			fMul(arg1, arg2);
-			break;
+			return fMul(arg1, arg2);
 		case 'div':
-			fDiv(arg1, arg2);
-			break;
+			return fDiv(arg1, arg2);
 	}
 }
