@@ -1,9 +1,5 @@
 let n = prompt('Введите число'),
-	num = {
-		единицы: 0,
-		десятки: 0,
-		сотни: 0
-	};
+	num = {};
 
 function explode(n) {
 	num.сотни = Math.floor(n / 100);
@@ -14,6 +10,7 @@ function explode(n) {
 
 if (n > 999 || n < 1) {
 	console.log(n + ' не подходит');
+	console.log(num);
 } else {
 	explode(n);
 }
